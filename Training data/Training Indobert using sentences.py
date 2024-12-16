@@ -6,9 +6,9 @@ import evaluate
 from sklearn.model_selection import train_test_split
 
 # Load the datasets
-players_df = pd.read_excel('./data training/data_pemain_dengan_selenium.xlsx')
-clubs_df = pd.read_excel('./data training/nama_klub_dan_venuenya.xlsx')
-annotated_df = pd.read_excel('./data training/annotated_ner_sentences_random_extended.xlsx')
+players_df = pd.read_excel('./Training data/data training/data_pemain_dengan_selenium.xlsx')
+clubs_df = pd.read_excel('./Training data/data training/nama_klub_dan_venuenya.xlsx')
+annotated_df = pd.read_excel('./Training data/data training/annotated_ner_sentences_random_extended.xlsx')
 
 # Prepare the players DataFrame
 players_df['Sentence'] = players_df['Nama Pemain IBL']

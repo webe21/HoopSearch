@@ -8,7 +8,7 @@ tokenizer = BartTokenizer.from_pretrained("facebook/bart-large")
 model = BartForConditionalGeneration.from_pretrained("facebook/bart-large")
 
 # Load the custom dataset
-dataset = pd.read_csv("data training/sample_indosum_indonesian.csv")  # Pastikan file berada di direktori yang sama
+dataset = pd.read_csv("./Training data/data training/sample_indosum_indonesian.csv")  # Pastikan file berada di direktori yang sama
 
 # Split the dataset into train and validation sets (80% train, 20% validation)
 train_data, val_data = train_test_split(dataset, test_size=0.2, random_state=42)
